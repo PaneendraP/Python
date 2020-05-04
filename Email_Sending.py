@@ -1,8 +1,8 @@
 import smtplib as smtp
 
 server=smtp.SMTP_SSL("smtp.gmail.com",465)
-server.login('phani.pothineni@gmail.com','@1270@phanipothineni') #
-server.sendmail("phani.pothineni@gmail.com","paneendrap@gmail.com",'Hello How are you ?')
+server.login('sender_Email','sender_password') 
+server.sendmail("From","To",'Message here')
 server.quit()
 
 # for gmail need to allow security...
